@@ -1,6 +1,7 @@
 // expose.js
 
 window.addEventListener('DOMContentLoaded', init);
+const jsConfetti = new JSConfetti()
 
 function init() {
   // TODO
@@ -22,7 +23,6 @@ function init() {
 
     if (audioElement.src.includes('party')) {
       //console.log('shoot confetti')
-      const jsConfetti = new JSConfetti()
       jsConfetti.addConfetti()
     }
   })
